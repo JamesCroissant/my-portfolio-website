@@ -18,7 +18,7 @@ const HeroSection = () => {
         </div>
         <div className="home-right mx-8 my-8">
           <h2 className="text-white text-5xl sm:text-6xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-br from-indigo-800 via-blue-500 to-cyan-300">
               Hello! I'm {" "}
             </span>
             <br />
@@ -31,7 +31,7 @@ const HeroSection = () => {
                 1000,
                 'Teacher',
                 1000,
-                'Entrepreneur',
+                'Web3 Researcher',
                 1000
               ]}
               wrapper="span"
@@ -39,7 +39,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h2>
-          <button className="my-5 px-6 py-3 rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">Hire Me</button>
+          <button className="my-5 px-6 py-3 rounded-full mr-4 bg-gradient-to-br from-indigo-800 via-blue-500 to-cyan-300 hover:bg-slate-200 text-white">Hire Me</button>
         </div>
       </div>
       {/* <div class="chevron-down">
