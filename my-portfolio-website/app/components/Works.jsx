@@ -18,7 +18,7 @@ const Works = () => {
         <div className="text-center px-2 py-2 my-4 mx-8 rounded-lg bg-gradient-to-r from-indigo-800 via-blue-500 to-cyan-300">
           {worksData.map((work, index) => (
             <div key ={index} className="flex flex-col md:flex-row rounded-lg h-full w-full px-2 py-2 bg-slate-200 hover:bg-opacity-80">
-              <div className="w-3/5 sm:w-full">
+              <div className="w-full">
                 <h3 className="text-2xl font-semibold py-2">{work.title}</h3>
                 <p className="text-left py-3 px-2">{work.description}</p>
                 <ul className="flex flex-wrap justify-center gap-1.5 py-3 px-3">
@@ -27,7 +27,7 @@ const Works = () => {
                   ))}
                 </ul>
               </div>
-              <div className="w-2/5 sm:w-full flex items-center justify-center">
+              <div className="w-full flex items-center justify-center">
                 <Image
                   src={work.imageUrl}
                   alt="working now"
