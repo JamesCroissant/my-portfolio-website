@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const SelfIntroduction = () => {
   return (
-    <div className="flex flex-col items-center my-8 mx-10 md:flex-row justify-around">
+    <div className="flex flex-col items-center my-8 mx-10 md:flex-row justify-around ld:flex-row">
       <div className="px-3">
         <p className="text-white">
           I'm a web developer with a passion for creating interactive web applications and coaching.

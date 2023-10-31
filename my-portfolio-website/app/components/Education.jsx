@@ -16,8 +16,8 @@ const Education = () => {
 
   
    return (
-    <div className="text-center px-2 py-2 my-6 mx-8 rounded-full bg-gradient-to-r from-indigo-800 via-blue-500 to-cyan-300 ">
-      <div className="rounded-full h-full w-full px-2 py-2 bg-slate-200">
+    <div className="text-center px-2 py-2 my-6 mx-8 rounded-lg md:rounded-full bg-gradient-to-r from-indigo-800 via-blue-500 to-cyan-300 ">
+      <div className="rounded-lg md:rounded-full h-full w-full px-2 py-2 bg-slate-200">
         <h3 className="text-3xl font-semibold pt-2">Career / Education</h3>
         <ul className="flex flex-wrap justify-center gap-2 py-3 px-3">
           {timelineElements.map((timelineElement, index) => (
