@@ -40,7 +40,7 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h2>
-          <div className="sm:flex sm:justify-center md:justify-start">
+          <div className="flex justify-center md:justify-start">
             <button className="my-5 px-5 py-3 rounded-full mr-4 bg-gradient-to-br from-indigo-800 via-blue-500 to-cyan-300 hover:bg-slate-200 text-white hover:opacity-80">
               <Link href="https://forms.gle/QGK7ZK13CBKMtZSp8" target="_blank" rel="noopener noreferrer">Hire Me</Link>
             </button>
