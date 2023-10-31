@@ -1,22 +1,24 @@
 "use client";
 import React from 'react';
 import Image from "next/image";
+import Link from "next/link";
 import { TypeAnimation } from 'react-type-animation';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
     <section id="home">
-      <div className="text-center flex flex-col mx-15 md:text-left md:flex-row justify-around items-center my-10 mx-10">
-        <div className="home-left">
+      <div className="text-center flex flex-col md:text-left md:flex-row justify-around items-center my-10 mx-10">
+        <div className="flex-shrink-0">
           <Image 
             src="/images/icon_profile.JPG" 
             alt="my profile icon"
             className="rounded-full"
-            width={250}
-            height={250}
+            width={200}
+            height={200}
           />
         </div>
-        <div className="home-right mx-8 my-8">
+        <div className="mx-8 my-8 md:max-w-[300px] lg:max-w-[700px]">
           <h2 className="text-white text-5xl sm:text-6xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-indigo-800 via-blue-500 to-cyan-300">
               Hello! I'm {" "}
@@ -24,9 +26,8 @@ const HeroSection = () => {
             <br />
             <TypeAnimation
               sequence={[
-                // Same substring at the start will only be typed out once, initially
                 'Yu Hamada',
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                1000,
                 'Web Developer',
                 1000,
                 'Teacher',
@@ -39,14 +40,19 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h2>
-          <button className="my-5 px-6 py-3 rounded-full mr-4 bg-gradient-to-br from-indigo-800 via-blue-500 to-cyan-300 hover:bg-slate-200 text-white">Hire Me</button>
+          <div className="sm:flex sm:justify-center md:justify-start">
+            <button className="my-5 px-5 py-3 rounded-full mr-4 bg-gradient-to-br from-indigo-800 via-blue-500 to-cyan-300 hover:bg-slate-200 text-white hover:opacity-80">
+              <Link href="https://forms.gle/QGK7ZK13CBKMtZSp8" target="_blank" rel="noopener noreferrer">Hire Me</Link>
+            </button>
+            <Link href="https://github.com/JamesCroissant" className="flex items-center px-1" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="text-white text-3xl hover:text-blue-400" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/yu-hamada-308893256/" className="flex items-center px-1" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="text-white text-3xl hover:text-blue-400" />
+            </Link>
+          </div>
         </div>
       </div>
-      {/* <div class="chevron-down">
-        <i class="fa-solid fa-chevron-down"></i>
-        <i class="fa-solid fa-chevron-down"></i>
-        <i class="fa-solid fa-chevron-down"></i>
-      </div> */}
     </section>
     
   )
